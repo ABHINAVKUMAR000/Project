@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATIUON</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.applybox{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px;
+    border-radius: 15px;
+}
+body{
+    background-color: grey;
+}
+.formcont{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 30px;
+}
+.formmain{
+    display: flex;
+   flex-direction: column;
+}
+.label{
+    font-size: 15px;
+}
+input ,select,textarea{
+    padding: 6px 10px;
+    border: 4px solid pink;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+input:focus{
+    outline-color: red;
+}
+.but{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;}
+    button{
+        background-color: red;
+        border: transparent solid 2px;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 8px;
+    }
+    button:hover{
+        color: green;
+        background-color: aquamarine;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="applybox">
+<h2>JOB APPLICATION</h2>
+<form action="">
+    <div class="formcont">
+        <div class="formmain">
+            <label for="first name">FIRST NAME :</label>
+            <input type="text" id="first name" name="first name" placeholder="ENTER THE NAME">
+        </div>
+        <div class="formmain">
+            <label for="last name">LAST NAME :</label>
+            <input type="text" id="last name" name="last name " placeholder="ENTER THE LAST NAME">
+        </div>
+        <div class="formmain">
+            <label for="EMAIL">EMAIL:</label>
+            <input  type="email" name="EMAIL" placeholder="ENTER THE EMAIL">
+        </div>
+        <div class="formmain">
+            <label for="ROLE">JOB ROLE:</label>
+             <select>
+                <option value="">SELECT JOB ROLE</option>
+                <option value="FRONTEND"> FRONTENT DEVELOPER</option>
+                <option value="BACKEND"> BACKEND DEVELOPER </option>
+                <option value="DSA SOLVER">D S A</option>
+             </select>
+        </div>
+        <div class="formmain">
+            <label for="ADD">ADDRESS:</label>
+            <textarea id="ADD" name="ADD" row="4" cols="50" placeholder="ENTER ADDRESS"></textarea>
+        </div>
+        <div class="formmain">
+            <label for="city">CITY:</label>
+            <input type="text" id="city" name="city" placeholder="ENTER YOUR CITY">
+        </div>
+        <div class="formmain">
+            <label for="pin">PIN CODE:</label>
+            <input type="number" id="pin" name="pin" placeholder="ENTER YOUR PIN ">
+        </div>
+        <div class="formmain">
+            <label for="date"> DATE:</label>
+            <input  value="2024-07-13" type="date" id="date" name="date">
+        </div>
+        <div class="formmain">
+            <label for="upload">UPLOAD YOUR CV:</label>
+           <input type="file" id="upload" name="upload">
+        </div>
+    </div>
+    <div class="but">
+        <button type="submit">APPLY</button>
+    </div>
+</form>
+        </div>
+    </div>
+</body>
+</html>
