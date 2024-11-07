@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 900px;
+    }
+    .box{
+        width: 300px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%,-50%);
+        background-color: pink;
+        text-align: center;
+        border-radius: 14em;
+        box-shadow: 5px 5px 50px 50px rgba(252, 5, 5, 0.699) ;
+        animation: animateBg 5s linear infinite;
+        background-color: black;
+        background-position: center;
+           }
+           @keyframes animateBg {
+            100%{
+                filter:hue-rotate(360deg);
+            }
+           }
+           .box input{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 3px solid blue;
+            padding: 14px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+           }
+           .box input[type ="text"]:focus,.box input[type= "password"]:focus{
+            width: 280px;
+            border-color: green;
+           }
+           .box input[type ="submit"]{
+            border: 0;
+            background: none;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 100%;
+            border: 3px solid green;
+            padding:  14px 40px;
+            outline: none;
+            color: antiquewhite;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+           }
+           .box input[type ="submit"]:hover{
+            background: green;
+           }
+           .navbar{background-color: white;
+border-radius: 4px;
+}
+.navbar li{
+   float: left;
+    list-style: none;
+    padding: 3px 3px;
+    margin: 13px 20px;
+}
+.navbar ul{
+    overflow: auto;
+
+}
+.navbar li a{
+padding: 3px 3px;
+text-decoration: none;
+color: black;
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+
+}
+.navbar input{
+    border: 2px solid grey;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+.navbar li a:hover ,.navbar li a.active{
+    text-decoration: underline;
+    color: black;}
+    h1{
+        color: black;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="$">HOME</a></li>
+                <li><a href="$">ABOUT</a></li>
+                <li><a href="$">SERVICES</a></li>
+                <li><a href="$">CONTACT US</a></li>
+                <div class="search"> <input type="text" name="search" id="search" placeholder="SEARCH ON SERVER"></div>
+            </ul>
+        </nav>
+    </header>
+    <form action="hello.html" class="box" method="post">
+        <h1>LOGIN⎈</h1>
+        <input type="text" name="" placeholder="USERNAME">
+        <input type="password" name="" placeholder="PASSWORD">
+        <input type="submit" name="" value="LOGIN" > 
+      </form>
+</body>
+</html>
